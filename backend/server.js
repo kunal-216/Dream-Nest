@@ -5,8 +5,8 @@ import connectDB from "./config/db.js";
 
 import authRoutes from "./routes/auth.js";
 import listingRoutes from "./routes/listing.js";
-// import bookingRoutes from "./routes/booking.js";
-// import userRoutes from "./routes/user.js";
+import bookingRoutes from "./routes/booking.js";
+import userRoutes from "./routes/user.js";
 
 dotenv.config();
 connectDB();
@@ -22,8 +22,8 @@ app.use(express.static("public"));
 // routes
 app.use("/auth",authRoutes);
 app.use("/properties",listingRoutes);
-// app.use("/bookings",bookingRoutes);
-// app.use("/users",userRoutes);
+app.use("/bookings",bookingRoutes);
+app.use("/users",userRoutes);
 
 app.get("/",(req,res) => {
     res.send("Hello World!");

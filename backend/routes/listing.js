@@ -4,7 +4,6 @@ import { createListing, getListing } from "../controllers/listingControllers.js"
 
 const router = express.Router();
 
-// configuration for multer file upload
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'public/uploads/')

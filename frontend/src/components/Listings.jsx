@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from "react"
-import { categories } from "../data.js"
-import "../styles/Listings.scss"
-import ListingCard from "./ListingCard"
-import Loader from "./Loader"
-import { useDispatch, useSelector } from "react-redux"
-import { setListings } from "../redux/state.js"
+import { useEffect, useState } from "react";
+import { categories } from "../data";
+import "../styles/Listings.scss";
+import ListingCard from "./ListingCard";
+import Loader from "./Loader";
+import { useDispatch, useSelector } from "react-redux";
+import { setListings } from "../redux/state";
 import axios from "axios"
 
 const Listings = () => {
@@ -59,7 +59,7 @@ const Listings = () => {
           ) : (
             <div className="listings">
               {listings.map(
-                (index, {
+                ({
                   _id,
                   creator,
                   listingPhotoPaths,
@@ -71,7 +71,7 @@ const Listings = () => {
                   price,
                   booking=false
                 }) => (
-                  <ListingCard key={index}
+                  <ListingCard key={_id}
                     listingId={_id}
                     creator={creator}
                     listingPhotoPaths={listingPhotoPaths}

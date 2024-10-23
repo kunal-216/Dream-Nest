@@ -6,7 +6,7 @@ import "../styles/Register.scss"
 
 const RegisterPage = () => {
 
-    const url = "http://localhost:3000/auth";
+    const url = "https://dream-nest-guuf.onrender.com/auth";
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
         firstName: "",

@@ -7,7 +7,7 @@ import "../styles/Login.scss"
 
 const LoginPage = () => {
 
-  const url = "http://localhost:3000/auth";
+  const url = "https://dream-nest-guuf.onrender.com/auth";
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");

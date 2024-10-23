@@ -10,7 +10,7 @@ import axios from "axios"
 
 const Listings = () => {
 
-    const url = "http://localhost:3000";
+    const url = "https://dream-nest-guuf.onrender.com";
     const dispatch = useDispatch();
     const [loading, setLoading] = useState(true);
     const [selectedCategory, setSelectedCategory] = useState("All");

@@ -13,7 +13,7 @@ import Footer from "../components/Footer"
 
 const CreateListing = () => {
 
-    const url = "http://localhost:3000"
+    const url = "https://dream-nest-guuf.onrender.com"
     const pinkred = "#F8395A";
     const [category, setCategory] = useState("");
     const [type, setType] = useState("");

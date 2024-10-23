@@ -50,7 +50,7 @@ const ListingCard = ({
     if (user?._id !== creator._id) {
       try {
         const response = await fetch(
-          `http://localhost:3000/users/${user?._id}/${listingId}`,
+          `https://dream-nest-guuf.onrender.com/users/${user?._id}/${listingId}`,
           {
             method: "PATCH",
             headers: {
@@ -81,7 +81,7 @@ const ListingCard = ({
           {listingPhotoPaths?.map((photo, index) => (
             <div key={index} className="slide">
               <img
-                src={`http://localhost:3000/${photo?.replace("public", "")}`} 
+                src={`https://dream-nest-guuf.onrender.com/${photo?.replace("public", "")}`} 
                 alt={`photo ${index + 1}`}
               />
               <div

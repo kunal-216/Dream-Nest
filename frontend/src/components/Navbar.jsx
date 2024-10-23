@@ -58,7 +58,7 @@ const Navbar = () => {
                     {!user ? (
                         <Person sx={{ color: darkGrey }} />
                     ) : (
-                        <img src={`http://localhost:3000/${user.profileImagePath.replace("public", "")}`} alt="profile photo" style={{ objectFit: "cover", borderRadius: "50%" }} />
+                        <img src={`https://dream-nest-guuf.onrender.com/${user.profileImagePath.replace("public", "")}`} alt="profile photo" style={{ objectFit: "cover", borderRadius: "50%" }} />
                     )}
                 </button>
 
